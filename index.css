@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.secao-topo{
+    width: 100%;
+    min-width: 340px;
+    position: fixed;
+    z-index: 1;
+    background-color: #604829;
+}
+.secao-topo img{
+    width: 75px;
+    margin-left: 35px;
+}
+a{
+    color: #c4a47c;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+a:hover{
+    padding: 0 10px;
+    box-shadow: 4px 7px 10px inset;
+    text-decoration: none;
+    
+}
+nav{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+}
+
+/*o topo irei mecher por ultimo é erradp e mas preciso de aprender o flex ainda*/
+.parallax-1{
+    
+    text-align: center;
+}
+.parallax-1 div{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+.parallax-1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+}
+/*parallax para baixo*/
+.conteiner-parallax, .container-contato, .container-horario{
+    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.conteiner-parallax{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    padding: 10px 20px;
+    background-color: #604829;
+    color: #fff;
+    font-family: 'Fraunces', serif;
+}
+.parallax-1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("parallax-imagem1.png");
+}
+.parallax-2{
+    width: 100vw;
+    height: 50vh;
+    background-image: url("parallax-imagem2.jpg");
+}
+.parallax-3{
+    width: 100vw;
+    height: 50vh;
+    background-image: url("parallax-imagem3.jpg");
+}
+/*modificando o container contato*/
+
+.container-contato{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("parallax-imagem4.png");
+}
+.container-horario{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("cafeteria.jpg");
+    position: relative;
+}
+
+/*container texto para baixo*/
+.container-texto{
+    color: #666;
+    width: 60vw;
+    margin: 0px auto;
+    line-height: 32px;
+    text-align: justify;
+    padding: 60px 0;
+    font-family: 'Lato', sans-serif;
+}
+.container-texto h2{
+    color: #c4a47c;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 30px;
+    
+}
+/*modificando o container contato*/
+.container-contato{
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.container-contato h2{
+    width: 40%;
+    text-align: center;
+    margin: 15px auto;
+    background-color: #604829;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 30px;
+}
+.box-contato{
+    font-size: 20px;
+    color: #fff;
+    width: 50%;
+    background-color: #604829;
+    margin: 30px auto;
+    box-sizing: border-box;
+}
+
+/*modificando a area dos horarioas*/
+.container-horario h2{
+    text-align: center;
+    font-size: 34px;
+    color: #fff;
+    
+}
+/*lista com um pequeno problema de centralização*/
+.lista li div{
+    width: 70%;
+    height: 1px;
+    background-color: #acacac;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: -10px auto;
+}
+.lista li p, .container-horario span{
+    display: flex;
+    color: #ACACAC;
+    margin-left: 71%;
+    margin-top: auto;
+    font-size: 24px;    
+}
+.container-horario span{
+    color: #c4a47c;
+    font-size: 24px;
+}
+.lista h3{
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 105px;
+    font-size: 24px;
+}
+
+/*mudando roda pé*/
+.rodape{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+footer{
+    display: flex;
+    width: 100vw;
+    background-color: #000000;
+    color: white;
+}
+
+.box img{
+    background-color: #c4a47c;
+    width: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 84%; 
+}
