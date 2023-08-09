@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*mechendo no header do site*/
+/*usando media query para dar spasamentos nos elementos do header*/
+
+.secao_topo .logo img {
+    width: 70px;
+}
+
+.naveget a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    font: normal 20px 'Oswald', sans-serif;
+    transition: all .5s linear;
+}
+.naveget a:hover{
+    transition: all .3s linear;
+    color: #bdbdbd;
+}
+
+/*paralax do banner da pagina*/
+#parallax-1 {
+    width: 100%;
+    height: 100vh;
+    background: url("../parallax-imagem1.png") center no-repeat;
+    background-size: cover;
+}
+
+.conteiner-paralla {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*tamanho do h1 do Banner*/
+    font: 800 50px 'Oswald', sans-serif;
+    color: #fff;
+}
+
+/*parallax para baixo*/
+.container-contato,
+.container-horario {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.conteiner-parallax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-parallax .card {
+    padding: 10px 20px;
+    font: 600 22px 'Oswald', sans-serif;
+    background: #604829;
+    color: #fff;
+}
+
+.parallax-1 {
+    background-image: url("../parallax-imagem1.png");
+}
+
+.parallax-2,
+.parallax-3 {
+    width: 100%;
+    height: 150px;
+}
+
+.parallax-2 {
+    background-image: url("../parallax-imagem2.jpg");
+}
+
+.parallax-3 {
+    background-image: url("../parallax-imagem3.jpg");
+}
+
+/*modificando o container contato*/
+
+.container_contato {
+    width: 100%;
+    padding-block: 60px;
+    background: url("../parallax-imagem4.png") no-repeat;
+    background-size: cover;
+}
+
+.container_horario {
+    width: 100%;
+    padding-block: 40px;
+    background: url("../cafeteria.jpg") no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+/*container texto para baixo*/
+.container-texto {
+    color: #666;
+    width: 70%;
+    margin: 0px auto;
+    line-height: 32px;
+    text-align: justify;
+    padding: 60px 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container-texto h2 {
+    color: #c4a47c;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 30px;
+
+}
+
+/*estilizando o container contato*/
+.container_contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.container_contato h2 {
+    font: 700 24px 'Oswald', sans-serif;
+    color: #fff;
+    background: #604829;
+    padding: 10px;
+}
+
+.box_contato {
+    font: normal 16px 'Oswald', sans-serif;
+    background: #604829;
+    color: #fff;
+    padding: 10px;
+}
+
+.box_contato a {
+    color: #adadad;
+    font: normal 14px 'Oswald', sans-serif;
+
+}
+
+/*modificando a area dos horarioas*/
+.container_horario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+
+    text-align: center;
+
+}
+
+/*mudando font do h2 dentro de container hora*/
+.container_horario h2 {
+    font: 700 25px 'Oswald', sans-serif;
+    padding-top: 10px;
+}
+
+/*lista responsiva */
+
+.lista {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    list-style: none;
+
+    /*trocando font de todo o conteier horario*/
+    font-family: 'Oswald', sans-serif;
+}
+
+.lista li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    padding-block: 10px;
+}
+
+.lista li div {
+    width: 70%;
+    height: 2px;
+    background: #666;
+
+}
+
+/*posiçao do botao voltar para o topo*/
+.scroll {
+    position: absolute;
+    top: -10px;
+    right: 40px;
+}
+
+.scroll a img {
+    width: 25px;
+}
+
+/*mudando roda pé*/
+footer {
+    background: black;
+    color: #fff;
+    position: relative;
+}
+
+.rodape {
+    text-align: center;
+    font: normal 10px "Arial";
+}
+
+.rodape a {
+    color: #666;
+}
+
+.rodape a:visited {
+    color: #c4a47c;
+}
+
+@media(min-width: 901px) {
+
+    /*mechendo no header do site*/
+    .secao_topo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: #604829;
+    }
+    .btn_off{
+        display: none;
+    }
+}
+
+@media(max-width: 900px) {
+
+    .secao_topo {
+        background-color: #604829;
+    }
+
+    .container_logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .card_btn button {
+        background: none;
+        border: none;
+    }
+
+    .card_btn button:active {
+        background: rgba(121, 121, 121, 0.233);
+        transform: scale(1.22);
+    }
+
+    .card_btn button img {
+        width: 30px;
+    }
+
+    .secao_topo .logo img {
+        width: 70px;
+    }
+
+    .on {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .naveget {
+        position: absolute;
+        top: 80px;
+        width: 80%;
+        background: black;
+        text-align: center;
+    }
+
+    .naveget a {
+        padding-block: 20px;
+        display: block;
+    }
+
+    .naveget a:hover {
+        background: white;
+        color: black;
+    }
+
+    /*container texto para baixo*/
+    .container-texto {
+        color: #666;
+        width: 86%;
+    }
+
+    .container-texto h2 {
+        font-size: 24px
+    }
+
+    .conteiner-paralla {
+        font-size: 30px;
+    }
+
+    .efeito {
+        animation: anime .2s linear;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+@keyframes anime {
+
+    to {
+        transform: rotate(0);
+    }
+
+    from {
+        transform: rotate(180deg);
+    }
+}
